@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="menu_item" id="drop_down">
+            ABOUT US
+            <ul class="sub-menu" hidden>
+                <li id="item-A">OUR STORY</li>
+                <li id="item-B">CONTACT US</li>
+                <li id="item-C">OUR STORY</li>
+            </ul>
+        </div>
+
+        <div class="menu_item">PRODUCT & SERVICES</div>
+
+        <div class="menu_item">USE CASES</div>
+
+        <div class="menu_item">ECOSYSTEM</div>
+
+        <div class="menu_item">BLOG</div>
+
+    </div>
+
+    <div class="banner">
+        <img src="resources/images/city.png" alt="city-background">
+        <div class="overlay">
+            <span>Innovate...now</span>
+        </div>
+    </div>
+
+    <div class="info_section">
+
+        <div class="blank"></div>
+
+        <div class="product_section">
+            <h2><b>PRODUCT & SERVICES</b></h2> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eveniet aperiam quis modi nisi. Odit, asperiores porro non ad dolore 
+                sequi neque error rem reprehenderit totam, nam excepturi odio necessitatibus temporibus.</p>
+        </div>
+
+        <div class="blank"></div>
+        <div class="blank"></div>
+
+        <div class="roi_section">
+            <img src="resources/images/image1.jpg" alt="stonks">
+            <div class="text-section">
+                <h3>Return on Investment</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, tempore dignissimos. 
+                    Perspiciatis aliquid accusantium temporibus commodi minima et accusamus placeat soluta laudantium sequi 
+                    hic libero, pariatur similique, tempora praesentium impedit.temporibus commodi minima et accusamus placeat soluta laudantium sequi 
+                    hic libero, pariatur similique, tempora praesentium impedit.</p>
+            </div>
+
+        </div>
+
+        <div class="blank"></div>
+        <div class="blank"></div>
+
+        <div class="shelf_section">
+            <div class="text-section">
+                <h3>Off-the-shelf and custom apps</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, tempore dignissimos. 
+                    Perspiciatis aliquid accusantium temporibus commodi minima et accusamus placeat soluta laudantium sequi 
+                    </p>
+                <a href="#">Read more</a>
+            </div>
+            <img src="resources/images/image2.jpg" alt="hackar">
+        </div>
+
+        <div class="blank"></div>
+        <div class="blank"></div>
+
+        <div class="security_section">
+            <img src="resources/images/image3.jpg" alt="very hackar">
+            <div class="text-section">
+                <h3>Security and High-availability</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, tempore dignissimos. 
+                    Perspiciatis aliquid accusantium temporibus commodi minima et accusamus placeat soluta laudantium sequi 
+                    </p>
+                <a href="#">Read more</a>
+            </div>
+            
+        </div>
+
+        <div class="blank"></div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#drop_down").hover(function(){
+            $(this).children(".sub-menu").fadeToggle(150)
+        })
+    })
+</script>
+</html>
